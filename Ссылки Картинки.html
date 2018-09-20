@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ссылки картинки</title>
+</head>
+<body>
+    <div id="links"></div>
+    <a href="./">ссылка на текущую директорию относительно файла в котором работаем</a><br>
+    <a href="../">ссылка на уровень вверх относительно файла в котором работаем</a><br>
+    <a href="./index.html">ссылка на файл в текущей директории с названием index.html</a><br>
+    <a href="./picture.jpg">ссылка на картинку в текущей директории picture.jpg</a><br>
+    <a href="https://www.google.com.ua/">ссылка на сайт google.com.ua откроется в этой же вкладке</a><br>
+    <a href="https://www.google.com.ua/" target="_self">ссылка на сайт google.com.ua откроется в этой же вкладке</a><br>
+    <a href="https://www.google.com.ua/" target="_blank">ссылка на сайт google.com.ua откроется в новой вкладке</a><br>
+    <!-- https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml -->
+    <a href="tel:+380630444773">+380630444773</a><br>
+    <a href="mailto:alexhateful@gmail.com?subject=free chocolate&body=123" target="_blank" title="не бойся отправить мне сообщение">alexhateful@gmail.com</a><br>
+    <a href="skype:alexhateful">alexhateful</a><br>
+    <a href="viber:+380630444773">+380630444773</a><br>
+
+    <div id="images"></div>
+    <img src="./images/picture.jpg" alt=""><br>
+    <img src="/images/foo.png" alt="bar" srcset="/images/foo.png 2x, /images/foo.png 3x" /><br>
+
+    <div id="iframe"></div>
+    <!-- https://developers.google.com/youtube/v3/ -->
+    <iframe src="./Базовые теги.html" frameborder="0" width="500"></iframe><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/V9zH-q4U3s0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+
+    <a href="#">наверх</a>
+</body>
+</html>

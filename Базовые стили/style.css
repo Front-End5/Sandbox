@@ -1,0 +1,91 @@
+h1 {
+    color: grey;
+    font-style: italic;
+    font-weight: normal;
+    text-shadow: lightgray 5px 10px;
+}
+
+section .article h1 {
+    color: red;
+}
+section article h1 {
+    color: blue !important;
+}
+
+#title {
+    font-size: 48px;
+}
+
+.title {
+    color: blue;
+}
+
+article h1 {
+    color: green;
+}
+
+table {
+    /* убрать отступы у ячеек */
+    border-spacing: 0;
+
+    /*задает рамку вокруг элемента */
+    border: 10px solid grey;
+
+    /* размер шрифта */
+    font-size: 20px;
+    
+    /* стиль шрифта */
+    font-style: italic;
+
+    /* жирность шрифта */
+    font-weight: 600;
+
+    /* подчеркивает текст */
+    text-decoration: underline;
+
+    /* устанавливает высоту строки */
+    line-height: 2;
+
+    /* задает цвет фона */
+    background-color: black;
+
+    /* задает цвет текста */
+    color: white;
+
+    /* выравнивание текста left right center */
+    text-align: center;
+
+    /* ширина */
+    width: 100%;
+
+    /* высота */
+    height: 80px;
+
+    /* максимальная ширина */
+    max-width: 500px;
+
+    /* минимальная высота */
+    min-height: 100px;
+}
+.red {
+    background-color: red;
+}
+.ora {
+    background-color: orange;
+}
+.yel {
+    background-color: yellow;
+}
+.gre {
+    background-color: green;
+}
+.blue {
+    background-color: lightblue;
+}
+.deep_blue {
+    background-color: blue;
+}
+.purple {
+    background-color: blueviolet;
+}
+

@@ -89,3 +89,20 @@ table {
     background-color: blueviolet;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+.box-with-shadow {
+    width: 150px;
+    height: 150px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px black;
+}
+.border-round {
+    width: 150px;
+    height: 150px;
+    background-color: whitesmoke;
+    border: 10px solid black;
+    border-radius: 50%;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Формы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="get">
+        <!-- поля ввода -->
+        <label>
+            enter name<br>
+            <input type="text" name="name" id="" placeholder="саша"><br><br>
+        </label>
+        <input type="password" name="password" id=""><br><br>
+        <input type="email" name="email" id="" value="myemail"><br><br>
+        <textarea name="message" id=""></textarea><br><br>
+        <input type="checkbox" name="terms" id="accept">
+        <label for="accept">accept terms of use</label>
+        <br><br>
+        <label>
+            accept terms of use
+            <input type="checkbox" name="terms" checked>
+        </label>
+        <br><br>
+        <input type="radio" name="radio" id="" checked>
+        <input type="radio" name="radio" id="">
+        <input type="radio" name="radio" id="">
+        <br><br>
+        <select name="select" id="">
+            <option value="1">one</option>
+            <option value="2" selected>two</option>
+            <option value="3">three</option>
+        </select>
+        <br><br>
+        <input type="color" name="color" id="" value="#ff00ff">
+        <br><br>
+
+        <!-- элементы управления формой -->
+        <input type="button" value="button"><br><br>
+        <input type="reset" value="reset"><br><br>
+        <input type="submit" value="отправить">
+    </form>
+</body>
+</html>

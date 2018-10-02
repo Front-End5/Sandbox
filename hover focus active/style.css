@@ -1,0 +1,46 @@
+.link {
+    text-decoration: none;
+    color: black;
+}
+.link:hover {
+    text-decoration: underline;
+    color: #666;
+}
+.link:focus {
+    text-decoration: underline;
+    color: #505;
+}
+.link:active {
+    color: red;
+}
+
+.button {
+    color: #0338ff;
+    border: 1px solid #0338ff;
+    background-color: transparent;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.button:hover, .button:focus {
+    color: white;
+    background-color: #0338ff;
+}
+.button:active {
+    background-color: #0023c0;
+}
+.button.with-icon i {
+    margin-right: 10px;
+}
+.button.with-icon:hover i {
+    transform: translateX(50%);
+}
+
+.button.disabled {
+    background-color: grey;
+    border-color: grey;
+    /* border: none; */
+    color: white;
+    cursor: not-allowed;
+}

@@ -44,3 +44,89 @@
     color: white;
     cursor: not-allowed;
 }
+
+.card {
+    width: 250px;
+    /* height: 250px; */
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 1px solid black;
+}
+.card__title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orangered;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.card__text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+.card__front {
+    background-color: cornflowerblue;
+}
+.card__back {
+    background-color: #0023c0;
+    display: none;
+}
+.card__front, .card__back {
+    padding: 20px;
+}
+.card:hover {
+    background-color: red;
+}
+.card:hover .card__front {
+    display: none;
+}
+.card:hover .card__back {
+    display: block;
+}
+.card:hover .card__footer {
+    background-color: black;
+    color: white;
+}
+.card__footer {
+    background-color: #0338ff;
+    padding: 5px;
+    text-align: center;
+}
+.card__footer span {
+    color: transparent;
+}
+.card__footer:hover {
+    color: transparent !important;
+}
+.card__footer:hover span {
+    color: white;
+}
+.card__footer:hover span:hover {
+    color: red;
+}
+
+.input {
+    border: none;
+    background-color: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    line-height: 2;
+}
+.input:valid {
+    border-color: green;
+}
+.input:invalid {
+    border-color: red;
+}
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}
+.input:valid + .message .error {
+    display: none;
+}
+.input:invalid + .message .success {
+    display: none;
+}

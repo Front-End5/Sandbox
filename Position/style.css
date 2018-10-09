@@ -1,0 +1,38 @@
+.big-box {
+    background-color: burlywood;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.big-box:hover .box {
+    opacity: 1;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 500ms;
+}
+.box2 {
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+.content {
+    height: 2000px;
+    background-color: whitesmoke;
+}
+.flag {
+    position: sticky;
+    top: 0;
+}

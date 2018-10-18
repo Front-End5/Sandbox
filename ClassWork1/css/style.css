@@ -1,0 +1,11 @@
+/* main styles */
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: #4e4d4d;
+    font-size: 13px;
+    line-height: 24px;
+}
+body {
+    background-image: url('../Untitled-1.jpg');
+    background-position: top;
+}

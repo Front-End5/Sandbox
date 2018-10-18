@@ -9,3 +9,127 @@ body {
     background-image: url('../Untitled-1.jpg');
     background-position: top;
 }
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.row {
+    display: flex;
+    margin: 0 -10px;
+}
+.col {
+    padding: 0 10px;
+    flex: 1;
+}
+
+.btn {
+    border: none;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+
+    background-color: #f25a29;
+    border-radius: 18px;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 13px 37px;
+    transition: .3s;
+}
+.btn:hover {
+    background-color: #c54a21;
+}
+
+/* header */
+.header {
+    background-image: url('../img/bg--header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    min-height: 620px;
+    display: flex;
+}
+.header .container {
+    display: flex;
+    flex-direction: column;
+}
+.header__headline {
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 0;
+    padding-right: 180px;
+}
+.logo {
+    padding-top: 10px;
+}
+.logo__link {
+    display: block;
+}
+.logo__img {
+    display: block;
+    width: 118px;
+    height: 11px;
+}
+.nav {
+
+}
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.nav__item {
+    /* margin: 0 17px; */
+}
+.nav__link {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+    color: #716f6f;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    position: relative;
+    padding: 17px;
+}
+.nav__link:after {
+    position: absolute;
+    bottom: 9px;
+    left: 17px;
+    width: calc(100% - 17px * 2);
+    height: 2px;
+    background-color: #f25a29;
+    display: block;
+    content: '';
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .3s;
+}
+.nav__link--active, .nav__link:hover {
+    color: #f25a29;
+}
+.nav__link--active:after, .nav__link:hover:after {
+    opacity: 1;
+    transform: translateY(0);
+}
+.header__text {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 127px;
+    letter-spacing: -0.03em;
+}
+.header__title {
+    color: #3d3d3d;
+    font-family: MuseoSans;
+    font-size: 37px;
+    line-height: 47px;
+    padding-bottom: 20px;
+    letter-spacing: -0.03em;
+}

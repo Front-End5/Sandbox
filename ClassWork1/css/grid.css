@@ -1,5 +1,5 @@
 .container {
-    max-width: 1140px;
+    max-width: 1160px;
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
@@ -11,10 +11,35 @@
 .row--work {
     margin: 0 -19px;
 }
+.row--quality {
+    margin: 0 -50px;
+}
+.row--quality .col {
+    padding: 0 50px;
+}
 .row--work .col {
     padding: 0 19px;
 }
 .col {
     padding: 0 10px;
     flex: 1;
+}
+.col-6 {
+    flex-grow: 0;
+    flex-basis: 50%;
+}
+.col-10 {
+    flex-grow: 0;
+    flex-basis: 83.33333333333333%;
+    /* width: 83.33333333333333%; */
+}
+.offset-1 {
+    margin-left: calc(8.333333333333333%);
+    /* margin-left: auto; */
+    /* margin: auto; */
+}
+.offset-5 {
+    margin-left: calc(8.333333333333333% * 5);
+    /* margin-left: auto; */
+    /* margin: auto; */
 }

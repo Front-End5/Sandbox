@@ -1,4 +1,9 @@
 /* main styles */
+* {
+    box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
+}
 html {
     font-family: 'Open Sans', sans-serif;
     color: #4e4d4d;
@@ -8,6 +13,13 @@ html {
 body {
     background-image: url('../Untitled-1.jpg');
     background-position: top;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    /* text-decoration: underline; */
 }
 .btn {
     border: none;
@@ -25,8 +37,12 @@ body {
     padding: 13px 37px;
     transition: .3s;
 }
+.btn--inline {
+    display: inline-block;
+}
 .btn:hover {
     background-color: #c54a21;
+    /* text-decoration: none !important; */
 }
 
 /* header */
@@ -124,6 +140,7 @@ body {
     display: flex;
     padding: 84px 0px;
     box-sizing: border-box;
+    background-color: white;
 }
 h1 {
     font-family: MuseoSans;
@@ -179,4 +196,201 @@ h2 {
 }
 .work__text p {
     margin: 15px 0;
+}
+.quality {
+    padding: 128px 0;
+    background-color: #f7f8fa;
+}
+.quality__text {
+    
+}
+.quality__text h1 {
+    margin-top: 7px;
+    margin-bottom: 33px;
+}
+.quality__link {
+    color: #4e4d4d;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 11px;
+    transition: ease .3s color;
+}
+.quality__link:hover {
+    /* text-decoration: underline; */
+    color: #f25a29;
+}
+.testimonials {
+    text-align: center;
+    padding: 86px 0 53px;
+    background-color: white;
+}
+.testimonials h1 {
+    margin-bottom: 18px;
+}
+.review {
+    border: 1px solid rgba(0,0,0,.12);
+    padding: 29px 24px;
+}
+.review__brand {
+    width: 142px;
+    height: 36px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.review__brand img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.review__text {
+    opacity: 0.6;
+    color: #3d3d3d;
+    font-family: MuseoSans;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 19px;
+    padding-top: 30px;
+}
+.review__name {
+    color: #3d3d3d;
+    font-family: Scriptina;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 19px;
+    padding-top: 8px;
+}
+.review__position {
+    color: #f25a29;
+    font-family: MuseoSans;
+    font-size: 11px;
+    line-height: 19px;
+    padding-top: 17px;
+}
+.slider-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    /* overflow: hidden; */
+    min-height: 250px;
+    padding: 39px 21px 0;
+}
+.slider {
+    max-width: 100%;
+    width: 100%;
+}
+.slide {
+    padding: 0 21px;
+    outline: none;
+}
+.slick-arrow {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: auto;
+    height: auto;
+    color: #8493a8;
+}
+.slick-arrow:before {
+    font-family: inherit;
+    font-size: 50px;
+    color: #8493a8;
+}
+.slick-next {
+    right: -55px;
+}
+.slick-next:before {
+    content: "\f105";
+}
+.slick-prev {
+    left: -62px;
+}
+.slick-prev:before {
+    content: "\f104";
+}
+.slick-dots {
+    bottom: -55px;
+}
+.slick-dots li {
+    margin: 0 1px;
+    width: auto;
+    height: auto;
+}
+.slick-dots li button {
+    width: 11px;
+    height: 11px;
+    background-color: #dbdbdb;
+    /* background-color: #3f3f3f; */
+    padding: 0;
+    border-radius: 50%;
+}
+.slick-dots li.slick-active button {
+    background-color: #8c8c8c;
+}
+.slick-dots li button:before {
+    display: none;
+}
+
+.career {
+    padding: 93px 0;
+    min-height: 690px;
+    background-image: url('../img/bg--designing.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.career h1 {
+    margin-bottom: 33px;
+}
+.career__link {
+    color: #4e4d4d;
+    /* font-family: OpenSans; */
+    font-size: 13px;
+    line-height: 1.8;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 12px 0;
+    display: inline-block;
+    transition: ease .3s color;
+}
+.career__link:hover {
+    /* text-decoration: underline; */
+    color: #f25a29;
+}
+.footer {
+    background-color: #f25a29;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 43px 0;
+}
+.footer__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 18px;
+}
+.social__item {
+    display: inline-block;
+}
+.social__item + .social__item {
+    margin-left: 11px;
+}
+.social__link {
+    color: white;
+    text-decoration: none;
+}
+.social__link:hover {
+    opacity: .8;
 }

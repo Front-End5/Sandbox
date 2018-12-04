@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="./css/styles.css")
+        script(src="./js/script.js")
+    body
+        .sidebar.js-sidebar
+            .logo
+            nav.nav
+                ul.nav__list
+                    each val, index in ['home', 'About me', 'Services', 'Portfolio', 'Hire me']
+                        if (index == 0)
+                            li.nav__item: a(href="javascript:void(0)").nav__link.nav__link--active= val
+                        else
+                            li.nav__item: a(href="javascript:void(0)").nav__link.nav__link= val  
+        .header
+            .container
+                .header_bar
+                    .logo
+                    .burger.js-burger burger
+                        span
+                        span
+                        span

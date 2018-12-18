@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="js-dragable" style="background-color: red; width: 200px; height: 200px; position: absolute; top: 5px; left: 5px;"></div>
+    <div class="js-dragable" style="background-color: blue; width: 200px; height: 200px; position: absolute; top: 5px; left: 5px;"></div>
+    <div class="js-dragable" style="background-color: green; width: 200px; height: 200px; position: absolute; top: 5px; left: 5px;"></div>
+
+    <div class="container">
+        <button class="btn js-button-modal">button to open modal window</button>
+        <br><br>
+        <label>
+            <input type="checkbox" class="js-checkbox">
+            toggle scroll event
+        </label>
+    </div>
+
+    <div class="js-modal" style="display: none;">123</div>
+
+    <div class="container">
+        <input type="text" class="js-input">
+        <div class="js-error" style="display: none; color: red;">error</div>
+    </div>
+
+    <div class="container">
+        <div class="js-elem_to_scroll" style="margin-top: 120vh;">elem_to_scroll</div>
+        <img class="js-elem_to_show" style="width: 100%; display: none;" src="https://bipbap.ru/wp-content/uploads/2017/04/72fqw2qq3kxh.jpg" alt="">
+    </div>
+    <div style="height: 200vh;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+// main styles goes here
+*
+    box-sizing border-box
+.nav
+    background-color whitesmoke
+    &>ul
+        list-style-type none
+        margin 0
+        padding 0
+        display flex
+        &>li
+            border 1px solid black
+            display flex
+            align-items stretch
+            position relative
+            &:not(:last-child)
+                border-right none
+            &:last-child
+                &>ul
+                    &>li
+                        &>ul
+                            left 0
+                            top -1px
+                            transform translateX(-100%)
+            &:hover
+                &>ul
+                    opacity 1
+                    transform translateY(100%)
+                    pointer-events all
+                i
+                    transform rotateZ(180deg)
+            i
+                padding 0 10px
+                transition ease .3s
+            &>ul
+                position absolute
+                bottom 0
+                left -1px
+                // width 100% + 2px
+                transform translateY(150%)
+                list-style none
+                padding 0
+                margin 0
+                opacity 0
+                pointer-events none
+                transition .3s ease
+                &>li
+                    background-color lightgrey
+                    border 1px solid grey
+                    position relative
+                    display flex
+                    align-items center
+                    &:not(:last-child)
+                        border-bottom none
+                    &>ul
+                        display none
+                        position absolute
+                        right 0
+                        top -1px
+                        transform translateX(100%)
+                        margin 0
+                        padding 0
+                        list-style none
+                        background-color grey
+                    &:hover
+                        &>ul
+                            display block
+    &__link
+        padding 15px 20px
+        display block

@@ -1,0 +1,29 @@
+@import "normalize";
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import "./assets/scss/vars";
+@import "./assets/scss/mixins";
+@import "./assets/scss/default";
+
+.footer {
+    border-top: 1px solid lightgrey;
+    padding-top: $gutter;
+}
+.carousel--main {
+    max-height: 50vh;
+    overflow: hidden;
+}
+.carousel-inner {
+    max-height: 50vh;
+}
+.carousel-item {
+    max-height: 50vh;
+}
+.carousel--main img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+.section {
+    padding: $gutter 0;
+}

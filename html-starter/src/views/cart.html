@@ -1,0 +1,92 @@
+{% extends 'template.html' %}
+
+{% block title %}
+Cart page
+{% endblock %}
+
+{% block content %}
+<section class="section">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Cart</li>
+			</ol>
+		</nav>
+		<div class="row">
+			<div class="col">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th scope="col"></th>
+							<th scope="col">Preview</th>
+							<th scope="col">Title</th>
+							<th scope="col">Short description</th>
+							<th scope="col">Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">
+								<button type="button" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</th>
+							<td>
+								<img class="product-image product-image--small" src="https://beetroot.academy/wp-content/uploads/Artboard-1.svg" class="card-img-top"
+								 alt="...">
+							</td>
+							<td>
+								<h3>FrontEnd</h3>
+							</td>
+							<td>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A temporibus, culpa voluptates voluptatibus quasi quis id dolor reprehenderit fuga ipsam.</p>
+							</td>
+							<td>
+								<div class="cost">
+									208 $
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<button type="button" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</th>
+							<td>
+								<img class="product-image product-image--small" src="https://beetroot.academy/wp-content/uploads/Artboard-1.svg" class="card-img-top"
+								 alt="...">
+							</td>
+							<td>
+								<h3>Design</h3>
+							</td>
+							<td>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A temporibus, culpa voluptates voluptatibus quasi quis id dolor reprehenderit fuga ipsam.</p>
+							</td>
+							<td>
+								<div class="cost">
+									208 $
+								</div>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="col" colspan="4">
+								<strong>Total price:</strong>
+							</th>
+							<th scope="col">
+								<div class="cost">
+										<strong>416 $</strong>
+								</div>
+							</th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		<button type="button" class="btn btn-primary">Continue to checkout</button>
+	</div>
+</section>
+{% endblock %}

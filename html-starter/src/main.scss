@@ -24,6 +24,57 @@
     height: 100%;
     width: 100%;
 }
+.carousel-control {
+    // background: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%,rgba(229,229,229,0.25) 75%,rgba(229,229,229,0) 100%);
+    
+    & span {
+        width: 50px;
+        height: 50px;
+        text-shadow: 2px 5px 3px rgba(0,0,0,.9);
+        filter: invert(1);
+    }
+}
+.carousel-caption {
+    background-color: rgba(0,0,0,.6);
+    padding: 15px;
+}
 .section {
     padding: $gutter 0;
+}
+
+.cost {
+    color: orangered;
+    font-size: 1.5em;
+    font-weight: 700;
+    white-space: nowrap;
+
+    strong {
+        color: red;
+    }
+}
+.product-image {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+
+    &--small {
+        max-width: 250px;
+    }
+}
+.tab-pane {
+    padding: 30px 0;
+}
+.review-img {
+    width: 150px;
+    height: 150px;
+}
+.review-img > * {
+    width: 100%;
+    height: auto;
+}
+.card.sticky-top {
+    top: 30px;
+}
+thead {
+    text-align: center;
 }

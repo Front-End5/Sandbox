@@ -1,0 +1,83 @@
+{% extends 'template.html' %}
+
+{% block title %}
+Product page
+{% endblock %}
+
+{% block content %}
+<section class="section">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item"><a href="shop.html">Store</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Product</li>
+			</ol>
+		</nav>
+		<div class="row">
+			<div class="col-md-12 col-lg-6">
+				<img src="https://beetroot.academy/wp-content/uploads/Artboard-1.svg" alt="" class="product-image">
+			</div>
+			<div class="col-md-12 col-lg-6">
+				<h2>Product <span class="badge badge-secondary">New</span></h2>
+				<div class="cost">208 $</div>
+				<p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam dicta quidem magni ullam
+					ipsam reprehenderit quos non. Labore, sequi facilis.</p>
+				<button type="submit" class="btn btn-primary">
+					<i class="fas fa-cart-plus mr-sm-2"></i>
+						Add to cart
+				</button>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+						 aria-selected="true">Descriptopn</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+						 aria-selected="false">Reviews</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat beatae consequatur, possimus voluptates
+							dicta maxime optio cumque nemo dolorem sit accusantium voluptatem adipisci, quia, perferendis fugiat! Repellat
+							in est veniam quidem nemo similique, reiciendis amet modi. A enim aliquid modi optio neque? Ducimus repellendus,
+							aliquam illum eligendi dignissimos expedita soluta.</p>
+					</div>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="media">
+							<div class="review-img">
+								<img src="https://icons8.com/iconizer/files/Pretty_Office_part_2/orig/man.png" class="mr-3" alt="...">
+							</div>
+							<div class="media-body">
+								<h3 class="mt-0">Media heading</h3>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+									vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
+									lacinia congue felis in faucibus.</p>
+							</div>
+						</div>
+						<br>
+						<br>
+						<br>
+						<h3>Type your review</h3>
+						<form action="">
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1">Example textarea</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

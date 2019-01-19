@@ -1,0 +1,19 @@
+@import "normalize";
+// @import "./assets/scss/bootstrap-grid";
+@import "./assets/scss/vars";
+@import "./assets/scss/mixins";
+@import "./assets/scss/default";
+@import "./components/Layout/Header/header";
+
+html, body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: url('../mobile.jpg');
+    background-position: top;
+
+    @include extra {
+        background-image: url('../desktop.jpg');
+    }
+}

@@ -1,0 +1,162 @@
+.header {
+	padding: 11px 0;
+	background-color: white;
+
+	@include extra {
+		padding: 0;
+		display: flex;
+
+		&:before {
+			flex-grow: 1;
+			display: block;
+			content: '';
+			background-color: white;
+		}
+
+		&:after {
+			flex-grow: 1;
+			display: block;
+			content: '';
+			background-color: black;
+		}
+	}
+
+	&__container {
+		padding: 0 15px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@include small {
+		  margin: 0 auto;
+		  width: 540px;
+		}
+	  
+		@include medium {
+		  width: 720px;
+		}
+	  
+		@include large {
+		  width: 960px;
+		}
+	  
+		@include extra {
+		  width: 1180px;
+		  padding: 0;
+		}
+	}
+
+	&__logo {
+		
+		@include extra {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.logo {
+	width: 80px;
+	height: 36px;
+
+	@include extra {
+		width: 100px;
+		height: 45px;
+	}
+
+	&__link {
+		display: block;
+	}
+
+	&__img {
+		max-width: 100%;
+		display: block;
+		height: auto;
+	}
+}
+
+.social {
+	
+	&__list {
+		display: inline-flex;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		color: black;
+	}
+
+	&__item {
+		margin: 0 15px;
+	}
+
+	&__link {
+		text-decoration: none;
+		@include font-size(26);
+		color: black;
+	}
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+
+	@include extra {
+		width: calc( ( 100% / 15 ) * 6 );
+	}
+
+	&__social {
+		display: none;
+
+		@include extra {
+			display: block;
+			width: 50%;
+			text-align: right;
+			padding-right: 9px;
+		}
+	}
+
+	&__menu {
+
+		@include extra {
+			padding: 19px 0;
+			width: 50%;
+			background-color: black;
+			padding-left: 25px;
+		}
+	}
+
+	&__burger {
+		border: none;
+		background: none;
+		cursor: pointer;
+		text-decoration: none;
+		width: 42px;
+		height: 42px;
+		padding: 0;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		transform: translateX(11);
+		font-size: 1.1em;
+		color: black;
+		
+		@include extra {
+			color: white;
+			width: auto;
+			transform: none;
+			padding: 0 12px;
+		}
+	}
+
+	&__text {
+		display: none;
+		@include font-size(18);
+		font-weight: 300;
+		line-height: 1.4;
+		text-transform: uppercase;
+		margin-left: 20px;
+
+		@include extra {
+			display: block;
+		}
+	}
+}

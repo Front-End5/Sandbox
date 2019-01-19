@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>
+		{% block title %}{% endblock %}
+	</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="./plugins/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" href="./plugins/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	{% include 'components/Layout/Header/header.html' %}
+
+	<div class="content">
+		{% block content %}{% endblock %}
+	</div>
+
+	{% include 'components/Layout/Footer/footer.html' %}
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./plugins/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	
+	<script>
+			$( function() {
+				let file = '';
+
+				$.widget( "custom.catcomplete", $.ui.autocomplete, {
+					_create: function() {
+						this._super();
+						this.widget().menu( "option", "items", "> :not(.ui-autocomplete-category)" );
+					},
+					_renderMenu: function( ul, items ) {
+						var that = this,
+							currentCategory = "";
+						$.each( items, function( index, item ) {
+							var li;
+							if ( item.category != currentCategory ) {
+								ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+								currentCategory = item.category;
+							}
+							li = that._renderItemData( ul, item );
+							if ( item.category ) {
+								li.attr( "aria-label", item.category + " : " + item.label );
+							}
+						});
+					},
+					_change: function( event, ui ) {
+						file = $(event.target).val();
+					}
+				});
+				var data = [
+					{ label: "anders", category: "" },
+					{ label: "andreas", category: "" },
+					{ label: "antal", category: "" },
+					{ label: "annhhx10", category: "Products" },
+					{ label: "annk K12", category: "Products" },
+					{ label: "annttop C13", category: "Products" },
+					{ label: "anders andersson", category: "People" },
+					{ label: "andreas andersson", category: "People" },
+					{ label: "andreas johnson", category: "People" }
+				];
+		 
+				$( "#search" ).catcomplete({
+					delay: 0,
+					source: data
+				});
+
+				$( '#btnSearch' ).on('click', function () {
+					event.preventDefault();
+					window.location.replace('/' + file + '.html');
+				})
+			}
+			);
+			</script>
+</body>
+</html>
